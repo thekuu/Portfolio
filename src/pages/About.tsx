@@ -36,7 +36,7 @@ export default function About() {
                   src="/portrait.jpeg"
                   alt="Zekaryas Geremew — Software Engineer"
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover object-top filter grayscale contrast-105 group-hover:scale-105 transition-transform duration-700 ease-out"
+                  className="w-full h-full object-cover object-top filter grayscale contrast-105 md:group-hover:scale-105 transition-transform duration-700 ease-out"
                   onError={(e) => {
                     // Fallback to github avatar if local image not found
                     const target = e.currentTarget;
@@ -76,10 +76,10 @@ export default function About() {
         <div className="mt-24">
           <Link 
             to="/stack" 
-            className="group inline-flex items-center gap-4 text-xl font-mono border-b border-border pb-2 hover:border-foreground transition-colors hoverable text-foreground hover:text-foreground"
+            className="group inline-flex items-center gap-4 text-xl font-mono border-b border-border pb-2 md:hover:border-foreground transition-colors hoverable text-foreground md:hover:text-foreground"
           >
             Explore my technical stack
-            <ArrowRight className="group-hover:translate-x-2 transition-transform" />
+            <ArrowRight className="md:md:group-hover:translate-x-2 transition-transform" />
           </Link>
         </div>
       </div>
@@ -94,7 +94,7 @@ function TimelineItem({ title, isActive, isLast = false }: { title: string, isAc
         <div className={`w-3 h-3 rounded-full transition-colors ${isActive ? 'bg-foreground' : 'bg-muted group-hover:bg-foreground/50'}`} />
         {!isLast && <div className="w-[1px] h-20 bg-muted group-hover:bg-border transition-colors" />}
       </div>
-      <div className={`text-xl font-serif transition-colors ${isActive ? 'text-foreground' : 'text-muted-foreground group-hover:text-foreground'}`}>
+      <div className={`text-xl font-serif transition-colors ${isActive ? 'text-foreground' : 'text-muted-foreground group-md:hover:text-foreground'}`}>
         {title}
       </div>
     </div>

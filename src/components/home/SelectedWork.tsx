@@ -41,7 +41,7 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
         <div className="lg:col-span-4 flex flex-col justify-between h-full order-2 lg:order-1">
           <div>
             <Link to={`/work/${project.slug}`} className="hoverable" data-cursor="READ">
-              <h3 className="text-3xl md:text-5xl font-serif mb-6 group-hover:text-foreground transition-colors">{project.title}</h3>
+              <h3 className="text-3xl md:text-5xl font-serif mb-6 group-md:hover:text-foreground transition-colors">{project.title}</h3>
             </Link>
             <p className="text-muted-foreground leading-relaxed mb-8">{project.description}</p>
             

@@ -24,7 +24,7 @@ export default function SystemMap() {
                 className={`relative px-8 py-4 border rounded-full font-mono text-sm tracking-widest cursor-pointer transition-all duration-300 w-64 max-w-full hoverable ${
                   activeNode === node.id 
                     ? 'border-white bg-foreground text-background' 
-                    : 'border-border bg-background text-muted-foreground hover:border-foreground hover:text-foreground'
+                    : 'border-border bg-background text-muted-foreground md:hover:border-foreground md:hover:text-foreground'
                 }`}
                 onMouseEnter={() => setActiveNode(node.id)}
                 onMouseLeave={() => setActiveNode(null)}

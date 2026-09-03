@@ -45,12 +45,12 @@ export default function Hero() {
                   }
                 }
               }}
-              className="group flex items-center gap-2 border border-border bg-muted/50 hover:bg-muted px-6 py-3 rounded-full transition-all hoverable"
+              className="group flex items-center gap-2 border border-border bg-muted/50 md:hover:bg-muted px-6 py-3 rounded-full transition-all hoverable"
             >
               Explore Work
-              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              <ArrowRight size={16} className="md:group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link to="/contact" className="group flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors hoverable">
+            <Link to="/contact" className="group flex items-center gap-2 text-muted-foreground md:hover:text-foreground transition-colors hoverable">
               Let's Talk
             </Link>
           </div>

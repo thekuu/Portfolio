@@ -11,7 +11,7 @@ export default function ProjectDetail() {
     return (
       <div className="min-h-screen pt-32 px-6 flex flex-col items-center justify-center text-center">
         <h1 className="text-4xl font-serif mb-4">Project not found</h1>
-        <Link to="/" className="text-muted-foreground hover:text-foreground underline">Return Home</Link>
+        <Link to="/" className="text-muted-foreground md:hover:text-foreground underline">Return Home</Link>
       </div>
     );
   }
@@ -26,7 +26,7 @@ export default function ProjectDetail() {
           animate={{ opacity: 1, x: 0 }}
           className="mb-12"
         >
-          <Link to="/#work" className="inline-flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-foreground hoverable">
+          <Link to="/#work" className="inline-flex items-center gap-2 text-sm font-mono text-muted-foreground md:hover:text-foreground hoverable">
             <ArrowLeft size={16} /> BACK TO WORK
           </Link>
         </motion.div>
@@ -43,10 +43,10 @@ export default function ProjectDetail() {
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl leading-relaxed">{project.description}</p>
           
           <div className="flex flex-wrap gap-4 mt-10">
-            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-3 bg-foreground text-background font-mono text-sm tracking-widest uppercase hover:opacity-80 transition-colors hoverable rounded-sm">
+            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-3 bg-foreground text-background font-mono text-sm tracking-widest uppercase md:hover:opacity-80 transition-colors hoverable rounded-sm">
               <ExternalLink size={16} /> Live Demo
             </a>
-            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-3 border border-border bg-muted/50 hover:bg-muted transition-colors font-mono text-sm tracking-widest uppercase hoverable rounded-sm">
+            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-3 border border-border bg-muted/50 md:hover:bg-muted transition-colors font-mono text-sm tracking-widest uppercase hoverable rounded-sm">
               <Github size={16} /> GitHub
             </a>
           </div>

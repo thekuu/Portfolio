@@ -53,7 +53,7 @@ function TabButton({ active, onClick, title }: { active: boolean, onClick: () =>
     <button 
       onClick={onClick}
       className={`text-left px-6 py-4 border rounded-sm transition-all hoverable ${
-        active ? 'border-foreground bg-muted text-foreground' : 'border-border text-muted-foreground hover:text-foreground hover:border-border'
+        active ? 'border-foreground bg-muted text-foreground' : 'border-border text-muted-foreground md:hover:text-foreground hover:border-border'
       }`}
     >
       <span className="font-mono text-sm tracking-widest uppercase">{title}</span>

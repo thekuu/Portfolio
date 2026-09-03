@@ -63,10 +63,10 @@ export default function Navbar() {
                   key={link.name}
                   to={link.path}
                   onClick={() => handleNavClick(link.path, false)}
-                  className="text-xs font-mono tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors hoverable relative group py-1"
+                  className="text-xs font-mono tracking-[0.15em] uppercase text-muted-foreground md:hover:text-foreground transition-colors hoverable relative group py-1"
                 >
                   {link.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-foreground transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-foreground transition-all duration-300 md:group-hover:w-full"></span>
                 </Link>
               ))}
             </nav>
@@ -110,10 +110,10 @@ export default function Navbar() {
                   <Link
                     to={link.path}
                     onClick={() => handleNavClick(link.path, true)}
-                    className="text-muted-foreground hover:text-foreground transition-colors relative group"
+                    className="text-muted-foreground md:hover:text-foreground transition-colors relative group"
                   >
                     {link.name}
-                    <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-foreground transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-foreground transition-all duration-300 md:group-hover:w-full"></span>
                   </Link>
                 </motion.div>
               ))}

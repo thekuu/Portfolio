@@ -36,13 +36,13 @@ function Step({ step, index }: { step: any, index: number }) {
       transition={{ duration: 0.6, delay: index * 0.1 }}
       className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 border-b border-border pb-12 group hover:border-border transition-colors"
     >
-      <div className="md:col-span-2 font-mono text-muted-foreground group-hover:text-foreground transition-colors">
+      <div className="md:col-span-2 font-mono text-muted-foreground group-md:hover:text-foreground transition-colors">
         — {step.num}
       </div>
-      <div className="md:col-span-4 font-serif text-2xl md:text-3xl group-hover:text-foreground transition-colors">
+      <div className="md:col-span-4 font-serif text-2xl md:text-3xl group-md:hover:text-foreground transition-colors">
         {step.title}
       </div>
-      <div className="md:col-span-6 text-muted-foreground font-sans text-lg group-hover:text-foreground transition-colors">
+      <div className="md:col-span-6 text-muted-foreground font-sans text-lg group-md:hover:text-foreground transition-colors">
         {step.desc}
       </div>
     </motion.div>

@@ -33,10 +33,10 @@ export default function ContactCTA() {
         >
           <Link 
             to="/contact" 
-            className="group inline-flex items-center gap-4 text-xl font-mono border-b border-border pb-2 hover:border-foreground transition-colors hoverable text-foreground hover:text-foreground"
+            className="group inline-flex items-center gap-4 text-xl font-mono border-b border-border pb-2 md:hover:border-foreground transition-colors hoverable text-foreground md:hover:text-foreground"
           >
             Get in touch
-            <ArrowRight className="group-hover:translate-x-2 transition-transform" />
+            <ArrowRight className="md:group-hover:translate-x-2 transition-transform" />
           </Link>
         </motion.div>
       </div>

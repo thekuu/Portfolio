@@ -99,11 +99,9 @@ export default function Stack() {
           {Object.entries(technologies).map(([category, items], idx) => (
             <motion.div 
               key={category}
-              layout
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
               className="flex flex-col"
             >
               <h2 className="font-mono text-sm tracking-widest text-muted-foreground uppercase mb-6 border-b border-border pb-2">{category}</h2>
@@ -116,7 +114,7 @@ export default function Stack() {
                     className={`px-5 py-2 border rounded-full font-sans transition-all hoverable ${
                       activeTech?.name === tech.name 
                         ? 'border-foreground bg-foreground text-background' 
-                        : 'border-border text-foreground hover:text-foreground hover:border-foreground hover:bg-muted'
+                        : 'border-border text-foreground md:hover:text-foreground md:hover:border-foreground md:hover:bg-muted'
                     }`}
                   >
                     {tech.name}

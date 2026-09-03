@@ -34,12 +34,12 @@ export default function Notes() {
             >
               <div className="flex flex-col gap-2">
                 <div className="font-mono text-xs tracking-widest text-muted-foreground uppercase">{note.category}</div>
-                <h2 className="text-2xl font-serif group-hover:text-foreground transition-colors">{note.title}</h2>
+                <h2 className="text-2xl font-serif group-md:hover:text-foreground transition-colors">{note.title}</h2>
               </div>
               
               <div className="flex items-center gap-6 text-muted-foreground font-mono text-sm">
                 <span>{note.date}</span>
-                <ArrowRight className="opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-foreground" />
+                <ArrowRight className="opacity-0 -translate-x-4 md:group-hover:opacity-100 md:group-hover:translate-x-0 transition-all text-foreground" />
               </div>
             </motion.div>
           ))}
