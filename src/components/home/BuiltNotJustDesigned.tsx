@@ -154,13 +154,13 @@ function ComponentDisplay() {
       className="w-full max-w-lg"
     >
       <div className="bg-[#0d1117] rounded-md border border-border overflow-hidden text-sm">
-        <div className="flex items-center gap-2 px-4 py-2 border-b border-border bg-muted/50">
+        <div className="flex items-center gap-2 px-4 py-2 border-b border-border bg-white/5">
           <div className="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/50" />
           <div className="w-3 h-3 rounded-full bg-yellow-500/20 border border-yellow-500/50" />
           <div className="w-3 h-3 rounded-full bg-green-500/20 border border-green-500/50" />
-          <span className="ml-4 font-mono text-xs text-muted-foreground">InteractiveComponent.tsx</span>
+          <span className="ml-4 font-mono text-xs text-zinc-400">InteractiveComponent.tsx</span>
         </div>
-        <div className="p-6 font-mono text-foreground leading-relaxed overflow-x-auto whitespace-pre">
+        <div className="p-6 font-mono text-zinc-300 leading-relaxed overflow-x-auto whitespace-pre">
           <span className="text-pink-400">export function</span> <span className="text-blue-400">InteractiveComponent</span>() {'{\n'}
           {'  '}const [isOpen, setIsOpen] = <span className="text-blue-300">useState</span>(false);{'\n'}
           {'\n'}
