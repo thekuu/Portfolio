@@ -22,10 +22,14 @@ export default function ThemeToggle() {
       setIsDark(true);
       document.documentElement.classList.add('dark');
       document.documentElement.classList.remove('light');
+      document.documentElement.style.setProperty('color-scheme', 'dark');
+      document.querySelector('meta[name="color-scheme"]')?.setAttribute('content', 'dark');
     } else {
       setIsDark(false);
       document.documentElement.classList.add('light');
       document.documentElement.classList.remove('dark');
+      document.documentElement.style.setProperty('color-scheme', 'only light');
+      document.querySelector('meta[name="color-scheme"]')?.setAttribute('content', 'only light');
     }
   }, []);
 
@@ -39,12 +43,16 @@ export default function ThemeToggle() {
     // Add transition class to body
     document.body.classList.add('theme-transitioning');
     
-    if (isDark) {
-      document.documentElement.classList.remove('dark');
-      document.documentElement.classList.add('light');
-    } else {
+    if (newIsDark) {
       document.documentElement.classList.remove('light');
       document.documentElement.classList.add('dark');
+      document.documentElement.style.setProperty('color-scheme', 'dark');
+      document.querySelector('meta[name="color-scheme"]')?.setAttribute('content', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.add('light');
+      document.documentElement.style.setProperty('color-scheme', 'only light');
+      document.querySelector('meta[name="color-scheme"]')?.setAttribute('content', 'only light');
     }
     
     setTimeout(() => {
